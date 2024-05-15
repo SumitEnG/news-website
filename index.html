@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myNewsWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="navbar container flex">
+            <a class="left">
+                <img src="assets/—Pngtree—vector web search icon_3994948.png" alt="news-logo" onclick="reload()">
+            </a>
+            <div class="middle">
+                <ul class="nav-links flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onClickNavItems('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onClickNavItems('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onClickNavItems('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onClickNavItems('technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="right flex">
+                    <input type="text" class="imput" id="input" placeholder="e.g science">
+                    <button class="search" id="search">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+        </div>
+    </main>
+
+    <template id="template">
+        <div class="card flex">
+            <a href="#" class="image" >
+                <img src="https://placehold.jp/400x200.png" id="img" alt="img">
+            </a>
+            <div class="descriptions flex">
+                <h3 class="heading" id="news-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <h6 class="date-time" id="news-source">778346hdjdb</h6>
+                <p class="description" id="news-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur soluta modi dolorum eligendi consequatur veritatis deleniti optio!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
